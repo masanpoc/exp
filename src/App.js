@@ -34,14 +34,14 @@ function App() {
       duration: 0, 
       scale: 2,
       motionPath: {
-        path: [{x:-800, y:0}],
+        path: [{x:-1200, y:0}],
       }
     })
     gsap.to(image, {
       duration: 0, 
       scale: 2,
       motionPath: {
-        path: [{x:800, y:0}],
+        path: [{x:1200, y:0}],
 
       }
     })
