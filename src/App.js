@@ -48,6 +48,7 @@ function App() {
     const timeline = gsap.timeline({ease: 'bounce-out'})
     timeline
     .to(magnifier, {
+      delay: 3,
       scale: 1,
       duration: 3, 
       motionPath: {
