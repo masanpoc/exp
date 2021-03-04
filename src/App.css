@@ -1,15 +1,17 @@
 
 .App {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
+  padding-top: 20%;
   overflow-x: hidden;
-  background-color: rgba(128, 128, 128, 0.219);
+  background-color: black;
+  min-height: 100vh;
+  /* background-color: rgb(255, 255, 255); */
 }
 
 h3 {
   margin: 0;
-  background-color: rgba(0, 0, 255, 0.212);
 }
 
 .header {
@@ -23,7 +25,7 @@ h3 {
 }
 
 .magnifier {
-  box-shadow: 2px 2px 2px 2px violet;
+  /* box-shadow: 2px 2px 2px 2px violet; */
   z-index: 2;
   border-radius: 50%;
   height: 350px;
@@ -42,10 +44,40 @@ h3 {
   height: auto;
 }
 
-.subtitle {
-  color: black;
-  padding: 2%;
-  border: 1px solid black;
+.wraper {
+  z-index: 12;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  margin-left: 8%;
+  margin-bottom: 40%;
+}
+
+.subtitle1 {
+  /* letter-spacing: 20px; */
+  font-weight: lighter;
+  font-size: 2em;
+  color: white;
+  /* text-decoration: underline; */
+  padding: 0;
+  display: flex;
+  margin-left: 10%;
+  justify-content: center;
+  width: 40vw;
+}
+
+.subtitle2 {
+  /* letter-spacing: 20px; */
+  font-weight: lighter;
+  font-size: 1.5em;
+  color: white;
+  /* text-decoration: underline; */
+  padding: 0;
+  display: flex;
+  margin-left: 10%;
+  justify-content: center;
+  width: 35vw;
 }
 
 .animation {
