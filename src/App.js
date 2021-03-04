@@ -32,12 +32,14 @@ function App() {
   useEffect(() => {
     gsap.to(magnifier, {
       duration: 0, 
+      scale: 2,
       motionPath: {
         path: [{x:-800, y:0}],
       }
     })
     gsap.to(image, {
       duration: 0, 
+      scale: 2,
       motionPath: {
         path: [{x:800, y:0}],
 
@@ -46,6 +48,7 @@ function App() {
     const timeline = gsap.timeline({ease: 'bounce-out'})
     timeline
     .to(magnifier, {
+      scale: 1,
       duration: 3, 
       motionPath: {
         path: [{x:-20, y:100}],
@@ -53,6 +56,7 @@ function App() {
       }
     })
     .to(image, {
+      scale: 1,
       duration: 3, 
       motionPath: {
         path: [{x:20, y:-100}],
@@ -60,6 +64,7 @@ function App() {
       }
     }, '>-3')
     .from(letter1, {
+      scale: 2,
       autoAlpha: 0,
       duration: 2,
       x: 100,
@@ -67,6 +72,7 @@ function App() {
       skewX: 50
     }, '>-3')
     .from(letter2, {
+      scale: 2,
       autoAlpha: 0,
       duration: 2,
       x: 50,
@@ -74,6 +80,7 @@ function App() {
       skewX: 70
     }, '>-2')
     .from(letter3, {
+      scale: 2,
       autoAlpha: 0,
       duration: 2,
       x: 200,
@@ -81,6 +88,7 @@ function App() {
       skewY: 30 
     }, '>-2')
     .from(letter4, {
+      scale: 2,
       autoAlpha: 0,
       duration: 2,
       x: 20,
@@ -88,6 +96,7 @@ function App() {
       skewX: 45
     }, '>-2')
     .from(letter5, {
+      scale: 2,
       autoAlpha: 0,
       duration: 2,
       x:44 ,
@@ -95,6 +104,7 @@ function App() {
       skewY: 36
     }, '>-2')
     .from(letter6, {
+      scale: 2,
       autoAlpha: 0,
       duration: 2,
       x: 587,
@@ -102,6 +112,7 @@ function App() {
       skewY: 58
     }, '>-2')
     .from(letter7, {
+      scale: 2,
       autoAlpha: 0,
       duration: 2,
       x:25 ,
@@ -118,9 +129,18 @@ function App() {
       delay: 0.5,
       duration: 1,
       y: 20,
-      autoAlpha: 0,
+      autoAlpha: 0
     })
-    
+    .to(App, {
+      delay: 2,
+      yPercent: -100,
+      // skewX: 10,
+      // skewY: 10,
+      duration: 2
+    })
+    .set(App, {
+      className: 'none'
+    })
 
 
     // .from(animation, {

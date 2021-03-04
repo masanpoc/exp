@@ -44,6 +44,10 @@ h3 {
   height: auto;
 }
 
+.none {
+  display: none;
+}
+
 .wraper {
   z-index: 12;
   color: white;
