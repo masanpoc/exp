@@ -9,15 +9,11 @@ gsap.registerPlugin(MotionPathPlugin);
 
 function App() {
 
-  // constant variables
-
   // useRef definitions 
-  let header = useRef();
   let magnifier = useRef();
   let image = useRef();
   let subtitle = useRef();
   let subtitle2 = useRef();
-  let animation = useRef();
   let letter1 = useRef();
   let letter2 = useRef();
   let letter3 = useRef();
@@ -143,45 +139,47 @@ function App() {
       className: 'none'
     })
 
-
-    // .from(animation, {
-    //   y: 50,
-    //   autoAlpha: 0,
-    //   // delay: 3
-    // })
-    // .from(header, {
-    //   y: 50,
-    //   autoAlpha: 0,
-    // })
-
-    
-
   }, [])
 
   // functions
 
   return (
-    <div ref={el => (App=el)} className="App">
-      {/* <h1 ref={el => (header=el)} className='header'>Header fdsewfw fwdcfwefe edfww</h1> */}
-      <div ref={el => (magnifier=el)} className='magnifier'>
-        <img ref={el => (image=el)} className='image' src={pic} alt='header' />
+    <div className='wrap'>
+      <div ref={el => (App=el)} className="App">
+          <div ref={el => (magnifier=el)} className='magnifier'>
+            <img ref={el => (image=el)} className='image' src={pic} alt='header' />
+          </div>
+          <div className='wraper'>
+            <div ref={el=>(letter1=el)} className='letter'>H</div>
+            <div ref={el=>(letter2=el)} className='letter'>A</div>
+            <div ref={el=>(letter3=el)} className='letter'>E</div>
+            <div ref={el=>(letter4=el)} className='letter'>N</div>
+            <div ref={el=>(letter5=el)} className='letter'>D</div>
+            <div ref={el=>(letter6=el)} className='letter'>E</div>
+            <div ref={el=>(letter7=el)} className='letter'>L</div>
+          </div>
+          <h3 ref={el => (subtitle=el)} className='subtitle1' >Todos necesitamos algún tipo de música</h3>
+          <h5 ref={el => (subtitle2=el)} className='subtitle2' >Música clásica quizás? Descubre quiénes somos</h5>
       </div>
-      <div className='wraper'>
-        <div ref={el=>(letter1=el)} className='letter'>H</div>
-        <div ref={el=>(letter2=el)} className='letter'>A</div>
-        <div ref={el=>(letter3=el)} className='letter'>E</div>
-        <div ref={el=>(letter4=el)} className='letter'>N</div>
-        <div ref={el=>(letter5=el)} className='letter'>D</div>
-        <div ref={el=>(letter6=el)} className='letter'>E</div>
-        <div ref={el=>(letter7=el)} className='letter'>L</div>
+      <div className='background'>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
+        <h1>H</h1>
       </div>
-      
-      {/* <p>djfimowpcjwd</p>
-      <p>jvemiopljdlkm</p> */}
-      <h3 ref={el => (subtitle=el)} className='subtitle1' >Todos necesitamos algún tipo de música</h3>
-      <h5 ref={el => (subtitle2=el)} className='subtitle2' >Música clásica quizás? Descubre quiénes somos</h5>
-      {/* <div ref={el => (animation=el)} className='animation' >Animation</div> */}
     </div>
+    
   );
 }
 

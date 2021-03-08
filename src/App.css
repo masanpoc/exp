@@ -1,13 +1,29 @@
 
+.wrap {
+  position: relative;
+  width: 100vw;
+}
+
+.background {
+  z-index: -1;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
 .App {
-  /* border: 1px solid black; */
+  z-index: 1;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   padding-top: 20%;
   overflow-x: hidden;
   background-color: black;
   min-height: 100vh;
-  /* background-color: rgb(255, 255, 255); */
 }
 
 h3 {
@@ -25,7 +41,6 @@ h3 {
 }
 
 .magnifier {
-  /* box-shadow: 2px 2px 2px 2px violet; */
   z-index: 2;
   border-radius: 50%;
   height: 350px;
@@ -59,11 +74,9 @@ h3 {
 }
 
 .subtitle1 {
-  /* letter-spacing: 20px; */
   font-weight: lighter;
   font-size: 2em;
   color: white;
-  /* text-decoration: underline; */
   padding: 0;
   display: flex;
   margin-left: 10%;
@@ -72,11 +85,9 @@ h3 {
 }
 
 .subtitle2 {
-  /* letter-spacing: 20px; */
   font-weight: lighter;
   font-size: 1.5em;
   color: white;
-  /* text-decoration: underline; */
   padding: 0;
   display: flex;
   margin-left: 10%;
